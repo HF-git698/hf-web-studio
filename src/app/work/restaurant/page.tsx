@@ -1,0 +1,9 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import { Navbar } from "@/components/navbar";
+import { RestaurantPreview } from "@/components/site-ui";
+export const metadata: Metadata = { title: "Restaurant Website Concept | HF Web Studio", description: "Explore Olive & Ember, an independent restaurant website design concept by HF Web Studio." };
+export default function RestaurantConcept() {
+  return <><Navbar/><main className="section-shell"><div className="case-header"><Link className="text-link" href="/#work">← Back to work</Link><h1>Olive & Ember.<br/><span className="serif">A seat at the table.</span></h1><p>An independent restaurant design concept, created to explore a warm, welcoming online experience. This is a design study, not a commissioned client project or a live restaurant.</p><div className="tags"><span>Restaurant concept</span><span>Visual direction</span><span>Responsive layout</span></div></div><div className="case-preview"><RestaurantPreview/></div><section className="case-details"><article><h2>The idea</h2><p>Give a neighborhood restaurant a digital home that feels as considered as its dining room: earthy colors, editorial type, and a clear welcome.</p></article><article><h2>The customer journey</h2><p>A proposed experience organized around discovering the menu, understanding the atmosphere, and finding the reservation flow. The preview above is illustrative; its controls are not a live booking system.</p></article><article><h2>Your version</h2><p>We can build around your real menu, photography, hours, location, and existing reservation or ordering provider. Features and integrations are agreed in your project scope.</p></article></section><div className="section-space" style={{ paddingTop: 0 }}><Link className="button button-green" href="/#contact">Let’s build your restaurant website ↗</Link></div></main></>;
+}
+
