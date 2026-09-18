@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { LeadChat } from "@/components/lead-chat";import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/hero-section";
 import { Arrow, RestaurantPreview, ServiceCard } from "@/components/site-ui";
@@ -40,7 +40,7 @@ export default function Home() {
     <section id="faq" className="section-shell section-space faq-grid"><div><p className="eyebrow">GOOD QUESTIONS.</p><h2>A few things<br/><span className="serif">you might wonder.</span></h2><p>Still have something on your mind?</p><Link href="#contact" className="text-link">Let’s talk it through <Arrow/></Link></div><div className="faqs">{faqs.map(([question, answer]) => <details key={question}><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></section>
 
     <section id="contact" className="contact-section"><div className="section-shell contact-grid"><div><p className="eyebrow">YOUR NEXT CHAPTER STARTS HERE.</p><h2>Ready for a website<br/>that works as<br/><span className="serif">hard as you do?</span></h2><p>Tell us a little about your business.<br/>Let’s find the right next step, together.</p><Link className="contact-email text-link" href="mailto:huangfxs1995@163.com">huangfxs1995@163.com <Arrow/></Link><div className="contact-stamp">↗<span>A better website.<br/>A stronger first impression.</span></div></div><div className="contact-panel"><h3>Let’s build something good.</h3><p>A few details are all we need to get started.</p><QuoteForm email="huangfxs1995@163.com"/></div></div></section>
-  </main><footer className="section-shell footer"><Link href="/" className="brand"><span className="brand-mark">hf<span>↗</span></span><span>HF WEB<span className="brand-light"> STUDIO</span></span></Link><p>Thoughtful websites. Local business in mind.</p><span>© {new Date().getFullYear()} HF Web Studio</span><Link href="#main">Back to top ↑</Link></footer></>;
+  </main><footer className="section-shell footer"><Link href="/" className="brand"><span className="brand-mark">hf<span>↗</span></span><span>HF WEB<span className="brand-light"> STUDIO</span></span></Link><p>Thoughtful websites. Local business in mind.</p><span>© {new Date().getFullYear()} HF Web Studio</span><Link href="#main">Back to top ↑</Link></footer><LeadChat /></>;
 }
 
 
