@@ -15,3 +15,15 @@
 
 @media(max-width:480px){.hero h1{font-size:clamp(32px,10.75vw,42px)}.quote-form input,.quote-form select,.quote-form textarea{font-size:16px}.quote-form label{font-size:12px}.form-note{font-size:11px}.menu-toggle{min-width:44px;min-height:44px}}
 .golden-dragon-work{margin-bottom:48px}.golden-dragon-work-preview{display:block;overflow:hidden;border:1px solid #ded7ca;border-radius:8px;background:#f7f4ec;color:#242723}.golden-dragon-work-cover{padding:40px;position:relative;background:radial-gradient(ellipse at 100% 100%,#e7d7bb,transparent 65%)}.golden-dragon-work-seal{display:block;width:42px;border:2px solid #204e40;color:#204e40;text-align:center;font-family:serif;font-size:20px;margin-bottom:24px}.golden-dragon-work-cover .eyebrow{color:#204e40;font-size:9px}.golden-dragon-work-cover h3{font-family:Georgia,serif;font-size:clamp(36px,4vw,58px);line-height:1.05;margin:20px 0;letter-spacing:-2px}.golden-dragon-work-cover h3 em{color:#204e40}.golden-dragon-work-cover p{font-family:Georgia,serif;font-size:18px}.golden-dragon-work-cta{display:inline-block;margin-top:26px;background:#204e40;color:#fff;padding:11px 18px;font-size:12px}.golden-dragon-work-preview:hover .golden-dragon-work-cta{background:#143c30}@media(max-width:600px){.golden-dragon-work-cover{padding:27px}}
+.lead-chat{position:fixed;right:22px;bottom:22px;z-index:60}
+.lead-chat-launch{border:0;border-radius:999px;background:var(--green);color:#fff;padding:13px 18px;font-size:12px;box-shadow:0 8px 24px #163a3033}
+.lead-chat-panel{width:min(360px,calc(100vw - 30px));margin-bottom:10px;background:#fafbf7;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 45px #163a3030;overflow:hidden}
+.lead-chat-head{display:flex;justify-content:space-between;padding:15px 17px;background:var(--green);color:#fff;font-size:12px}
+.lead-chat-messages{padding:14px;height:250px;overflow:auto;background:#f0f2eb}
+.lead-chat-messages p{max-width:88%;padding:9px 11px;border-radius:10px;margin:0 0 9px;font-size:12px;line-height:1.55}
+.lead-chat-messages p.assistant{background:#fff;color:var(--foreground)}
+.lead-chat-messages p.user{background:var(--green);color:#fff;margin-left:auto}
+.lead-chat-panel form{display:flex;gap:8px;padding:12px}
+.lead-chat-panel input{flex:1;border:1px solid var(--line);border-radius:6px;padding:9px;font-size:12px}
+.lead-chat-panel form button{border:0;border-radius:6px;background:var(--green);color:#fff;padding:0 12px}
+.lead-chat-panel small{display:block;padding:0 12px 12px;color:var(--muted);font-size:9px}
